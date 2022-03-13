@@ -1,0 +1,15 @@
+<h1>Search</h1>
+<div class="mb-3">
+  <label for="ageFrom" class="form-label">Age from</label>
+  <input type="number" class="form-control" id="ageFrom" aria-describedby="ageHelp" [(ngModel)]="ageFrom">
+  <label for="ageTo" class="form-label">Age from</label>
+  <input type="number" class="form-control" id="ageTo" aria-describedby="ageHelp" [(ngModel)]="ageTo">
+  <div id="ageHelp" class="form-text">Please give a range for the age</div>
+</div>
+<div class="mb-3 form-check">
+  <input type="checkbox" class="form-check-input" id="deceased" [(ngModel)]="deceased">
+  <label class="form-check-label" for="deceased">Deceased</label>
+  <input type="checkbox" class="form-check-input" id="notDeceased" [(ngModel)]="notDeceased">
+  <label class="form-check-label" for="notDeceased">Not Deceased</label>
+</div>
+<input type="button" class="btn btn-primary" value="Save search query" (click)="saveQuery()">
